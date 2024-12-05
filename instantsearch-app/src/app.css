@@ -3,10 +3,17 @@
   align-items: center;
   min-height: 50px;
   padding: 0.5rem 1rem;
-  background-image: linear-gradient(284deg, #fedd4e, #fcb43a);
+  background-image: linear-gradient(284deg, #d1d1d1, #eeeeee);
   color: #fff;
   margin-bottom: 1rem;
 }
+.header-logo{
+width: 200px;
+height: 100px;
+object-fit: cover;
+
+}
+
 
 .header a {
   color: #fff;
