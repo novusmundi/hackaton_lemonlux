@@ -24,6 +24,15 @@ search.addWidgets([
       { label: '>1000', start: 1000 },
     ],
   }),
+  instantsearch.widgets.toggleRefinement({
+    container: '#toggleRefinement',
+    attribute: 'customizable',
+    transformItems: items =>{
+      return items.filter(item => item.label !== 'Nooktools')
+    }
+  
+  }),
+
   instantsearch.widgets.hits({
     container: '#hits',
     cssClasses: {
