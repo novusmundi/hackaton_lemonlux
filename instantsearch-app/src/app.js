@@ -14,6 +14,9 @@ search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#searchbox',
   }),
+  instantsearch.widgets.stats({
+    container: '#stats',
+  }),
   instantsearch.widgets.numericMenu({
     container: '#numeric-menu',
     attribute: 'sell',
@@ -29,8 +32,8 @@ search.addWidgets([
     container: '#sort-by',
     items: [
       { label: 'Price', value: 'instant_search_price_asc' },
-      { label: 'Price (asc)', value: 'instant_search_sell_asc' },
-    { label: 'Price (desc)', value: 'instant_search_sell_desc' },
+      { label: 'Price (asc)', value: 'sell_asc' },
+    { label: 'Price (desc)', value: 'sell_desc' },
       { label: 'name', value: 'name' },
     ],
   }),
