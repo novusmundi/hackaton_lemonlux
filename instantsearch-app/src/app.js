@@ -28,22 +28,6 @@ search.addWidgets([
     ],
   })
   ,
-  instantsearch.widgets.sortBy({
-    container: '#sort-by',
-    items: [
-      { label: 'Price', value: 'instant_search_price_asc' },
-      { label: 'Price (asc)', value: 'sell_asc' },
-    { label: 'Price (desc)', value: 'sell_desc' },
-      { label: 'name', value: 'name' },
-    ],
-  }),
-  instantsearch.widgets.toggleRefinement({
-    container: '#toggleRefinement',
-    attribute: 'customizable',
-    on: true,
-  
-  }),
-
   instantsearch.widgets.hits({
     container: '#hits',
     cssClasses: {
