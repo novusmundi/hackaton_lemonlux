@@ -14,7 +14,6 @@ object-fit: cover;
 
 }
 
-
 .header a {
   /* color: #fff; */
   text-decoration: none;
@@ -81,18 +80,6 @@ object-fit: cover;
   margin: 2rem auto;
   text-align: center;
 }
-/* .ais-Hits-list{
-  background-color: blue;
-}
-
-.ais-Hits{
-  background-color: blue;
-} */
-
-#refinementList{
-
-}
-
 
 .ais-Hits-item{
   text-transform: uppercase;
@@ -114,11 +101,13 @@ object-fit: cover;
 
 #cursor-image {
   position: absolute;
-  pointer-events: none; /* Esto hace que el cursor siga sin interferir con la imagen */
+  pointer-events: none; 
   transition: transform 0.1s ease;
 }
 
 #cursor-image img {
-  width: 50px; /* Ajusta el tamaño de la imagen */
-  height: 50px; /* Ajusta el tamaño de la imagen */
+  margin: 20px;
+  width: 50px; 
+  height: 80px; 
+  object-fit: cover;
 }
