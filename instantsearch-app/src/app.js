@@ -23,13 +23,21 @@ search.addWidgets([
       { label: '500 - 1000', start: 500, end: 1000 },
       { label: '>1000', start: 1000 },
     ],
+  })
+  ,
+  instantsearch.widgets.sortBy({
+    container: '#sort-by',
+    items: [
+      { label: 'Price', value: 'instant_search_price_asc' },
+      { label: 'Price (asc)', value: 'instant_search_sell_asc' },
+    { label: 'Price (desc)', value: 'instant_search_sell_desc' },
+      { label: 'name', value: 'name' },
+    ],
   }),
   instantsearch.widgets.toggleRefinement({
     container: '#toggleRefinement',
     attribute: 'customizable',
-    transformItems: items =>{
-      return items.filter(item => item.label !== 'Nooktools')
-    }
+    on: true,
   
   }),
 
