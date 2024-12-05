@@ -14,8 +14,21 @@ search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#searchbox',
   }),
+  instantsearch.widgets.numericMenu({
+    container: '#numeric-menu',
+    attribute: 'sell',
+    items: [
+      { label: 'All' },
+      { label: '>500', end: 500 },
+      { label: '500 - 1000', start: 500, end: 1000 },
+      { label: '>1000', start: 1000 },
+    ],
+  }),
   instantsearch.widgets.hits({
     container: '#hits',
+    cssClasses: {
+      root: 'hit-div',
+    },
     templates: {
       item: (hit, { html, components }) => html`
 <article>

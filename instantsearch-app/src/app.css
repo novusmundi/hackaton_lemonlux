@@ -4,7 +4,7 @@
   min-height: 50px;
   padding: 0.5rem 1rem;
   background-image: linear-gradient(284deg, #d1d1d1, #eeeeee);
-  color: #fff;
+  /* color: #fff; */
   margin-bottom: 1rem;
 }
 .header-logo{
@@ -16,7 +16,7 @@ object-fit: cover;
 
 
 .header a {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
 }
 
@@ -50,12 +50,25 @@ object-fit: cover;
 
 .search-panel__results {
   flex: 3;
+  background-color: blue;
+}
+
+.hit-div{
+  background-color: blueviolet;
 }
 
 .row-div{
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.row-div-body{
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  background-color: blue;
+  width: 100%;
 }
 
 .price-img {
@@ -77,10 +90,26 @@ object-fit: cover;
   margin: 2rem auto;
   text-align: center;
 }
+/* .ais-Hits-list{
+  background-color: blue;
+}
+
+.ais-Hits{
+  background-color: blue;
+} */
+
+#refinementList{
+  background-color: blue;
+}
+
+
+.ais-Hits-item{
+  color: pink;
+}
 
 .ais-Hits-item article {
-  color: "green";
   display: flex;
+  background-color: green;
 }
 
 .ais-Hits-item img {
