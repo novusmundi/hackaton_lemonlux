@@ -110,3 +110,15 @@ object-fit: cover;
   max-height: 125px;
   padding-right: 16px;
 }
+
+
+#cursor-image {
+  position: absolute;
+  pointer-events: none; /* Esto hace que el cursor siga sin interferir con la imagen */
+  transition: transform 0.1s ease;
+}
+
+#cursor-image img {
+  width: 50px; /* Ajusta el tamaño de la imagen */
+  height: 50px; /* Ajusta el tamaño de la imagen */
+}
