@@ -45,6 +45,18 @@
   flex: 3;
 }
 
+.row-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price-img {
+  width: 40px;
+  height: 50px;
+  object-fit: cover;
+}
+
 .ais-Highlight-highlighted {
   color: inherit;
   font-size: inherit;
