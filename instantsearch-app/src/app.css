@@ -50,12 +50,9 @@ object-fit: cover;
 
 .search-panel__results {
   flex: 3;
-  background-color: blue;
 }
 
-.hit-div{
-  background-color: blueviolet;
-}
+
 
 .row-div{
   display: flex;
@@ -63,13 +60,7 @@ object-fit: cover;
   align-items: center;
 }
 
-.row-div-body{
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  background-color: blue;
-  width: 100%;
-}
+
 
 .price-img {
   width: 40px;
@@ -99,17 +90,20 @@ object-fit: cover;
 } */
 
 #refinementList{
-  background-color: blue;
+
 }
 
 
 .ais-Hits-item{
-  color: pink;
+  text-transform: uppercase;
+}
+
+.ais-Hits-item:first-letter {
+  text-transform: uppercase;
 }
 
 .ais-Hits-item article {
   display: flex;
-  background-color: green;
 }
 
 .ais-Hits-item img {
