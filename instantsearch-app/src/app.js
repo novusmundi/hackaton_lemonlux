@@ -1,5 +1,13 @@
 const { algoliasearch, instantsearch } = window;
 
+document.addEventListener("mousemove", function(e) {
+  var cursorImage = document.getElementById('cursor-image');
+  var x = e.clientX;
+  var y = e.clientY;
+
+  cursorImage.style.left = x + 'px';
+  cursorImage.style.top = y + 'px';
+});
 
 const searchClient = algoliasearch('PSXPTKZ8HK', '5e5c6e77f9e915ee456df653c93f19d6');
 
